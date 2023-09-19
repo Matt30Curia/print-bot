@@ -51,7 +51,7 @@ def print_photo(msg) -> None:
 def get_photo_path(msg) -> str:
     return DIR + "pdf.jpg"
 
-def img_to_pdf():
+def img_to_pdf() -> str:
     t = ImageToPdf(TOKEN_PDF, verify_ssl=True, proxies = '')
     t.add_file(DIR + 'pdf.jpg')
     t.debug = False
